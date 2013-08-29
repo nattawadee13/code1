@@ -1,0 +1,13 @@
+<?php
+class Main extends CI_Controller
+{
+public function index()
+{
+$this->load->model('message_model');
+07.
+$this->message_model->setMessage("Thaicoding.net");
+$data['displayMessage'] = $this->message_model->getMessage();
+$this->load->view('viewpage',$data);
+}
+}
+?>
